@@ -1,23 +1,24 @@
-const app = document.getElementById('root');
+const app = document.getElementById("root");
 
-const logo = document.createElement('img');
-logo.src = 'logo.png';
+const logo = document.createElement("img");
+logo.src = "logo.png";
+logo.setAttribute("style", "margin: 1rem");
 
-const container = document.createElement('div');
-container.setAttribute('class', 'container');
+const container = document.createElement("div");
+container.setAttribute("class", "container");
 
 app.appendChild(logo);
 app.appendChild(container);
 
 function generateFilmCards(data) {
   data.forEach(movie => {
-    const card = document.createElement('div');
-    card.setAttribute('class', 'card');
+    const card = document.createElement("div");
+    card.setAttribute("class", "card");
 
-    const h1 = document.createElement('h1');
+    const h1 = document.createElement("h1");
     h1.textContent = movie.title;
 
-    const p = document.createElement('p');
+    const p = document.createElement("p");
     movie.description = movie.description.substring(0, 300);
     p.textContent = `${movie.description}...`;
 
@@ -28,7 +29,7 @@ function generateFilmCards(data) {
 }
 
 function getFilms() {
-  fetch('https://ghibliapi.herokuapp.com/films')
+  fetch("https://ghibliapi.herokuapp.com/films")
     .then(function(response) {
       if (response.ok) {
         return response.json();
@@ -40,14 +41,14 @@ function getFilms() {
       generateFilmCards(data);
     })
     .catch(function(err) {
-      console.warn('Something went wrong.', err);
+      console.warn("Something went wrong.", err);
     });
 }
 
 // getFilms();
 
 async function getFilmsAsync() {
-  let response = await fetch('https://ghibliapi.herokuapp.com/films');
+  let response = await fetch("https://ghibliapi.herokuapp.com/films");
   let data = await response.json();
   return data;
 }
