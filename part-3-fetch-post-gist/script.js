@@ -5,7 +5,7 @@ function createGist(opts) {
     body: JSON.stringify(opts),
     headers: new Headers({
       'Content-Type': 'application/json',
-      Authorization: 'token [YOUR TOKEN HERE]'
+      Authorization: 'token [GITHUB_TOKEN]'
     })
   })
     .then(function(response) {
@@ -17,13 +17,13 @@ function createGist(opts) {
 }
 
 function submitGist() {
-  var content = document.querySelector('textarea').value;
+  const content = document.querySelector('textarea').value;
   if (content) {
     createGist({
       description: 'Fetch API Post example',
       public: true,
       files: {
-        'Hi LMU!': {
+        'hi-lmu-hacks.txt': {
           content: content
         }
       }
@@ -33,5 +33,5 @@ function submitGist() {
   }
 }
 
-var submitBtn = document.querySelector('button');
+const submitBtn = document.querySelector('button');
 submitBtn.addEventListener('click', submitGist);
