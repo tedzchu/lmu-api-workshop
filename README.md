@@ -8,13 +8,22 @@ This material is just a compilation of the API Calls workshop I am leading at Lo
 ## What is `fetch()`?
 https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 
+### Request, Response
+
+#### Response Error Handling
+
+### CORS
+
+### Headers
+
+### Body
+https://developer.mozilla.org/en-US/docs/Web/API/Body
+
 ## Promises and async/await
 
 ## The DOM
 
 ## React (Hooks)
 
-## link dump
-parse a CSV with split - Line chart with https://www.chartjs.org/docs/latest/
-use of fetch outside of API? - https://developer.mozilla.org/en-US/docs/Web/API/Body
-post? - https://jsonplaceholder.typicode.com/guide.html
+#### where is this going
+https://jsonplaceholder.typicode.com/guide.html
