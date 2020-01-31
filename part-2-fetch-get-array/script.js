@@ -52,7 +52,6 @@ async function getFilmsAsync() {
   return data;
 }
 
-getFilmsAsync()
-  .then(function(data) {
-    generateFilmCards(data);
-  });
+getFilmsAsync().then(function(data) {
+  generateFilmCards(data);
+});
