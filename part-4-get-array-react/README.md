@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Thanks to [Brandon Morelli](https://github.com/bmorelli25/interactive-bitcoin-price-chart) for his Bitcoin chart!
+
 ## Available Scripts
 
 In the project directory, you can run:
