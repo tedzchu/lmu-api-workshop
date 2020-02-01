@@ -38,7 +38,9 @@ class App extends Component {
                 '4. close'
               ].toLocaleString('us-EN', { style: 'currency', currency: 'USD' }),
               x: count, //previous days
-              y: stockData['Time Series (Daily)'][date]['4. close'] // numerical price
+              y: Number(
+                stockData['Time Series (Daily)'][date]['4. close']
+              ).toFixed(2) // numerical price
             });
             count -= 1;
             if (count < 0) {
