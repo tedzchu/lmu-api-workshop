@@ -183,7 +183,7 @@ Read the docs: <https://ghibliapi.herokuapp.com/>
 
 Ready for your fetch requests to take up far less lines? Me too!
 
-We'll be using a Studio Ghibli API which returns JSON of Ghibli film titles and their descriptions. Maybe one day I'll add links.
+We'll be using a Studio Ghibli API which returns JSON of Ghibli film titles and their descriptions.
 
 You'll notice a lot of the code in this module is in the `script.js` file as I'd like to get closer to React, which we will cover last.
 
@@ -262,9 +262,11 @@ Read the docs: <https://www.alphavantage.co/documentation/>
 
 > **NOTE**: I highly advise **against** using this API. I used this thinking I would make a cool sample project and ended up hating every step of the way. Just go look at the fetch in `App.js` to see what I mean. Why would you do this to your keys, man...
 
-I have to be at the hackathon in about 5 hours, so I'm going to call it quits here. The fact of the matter is, if you're using JavaScript in your React project, you'll still be able to do these fetch requests as I've listed here. I've created a React App showing a price graph for stocks which I will absoultely walk through during the workshop, but there's really not any new concepts I'd like to cover here.
+This is going to be a bit brief since I mostly want to walk through the app during the workshop. Basically, I'm querying a stock price API and returning a 30 trading day history of the application. I took an SVG library to make the graph prettier and added some stats.
 
-Maybe I'll revisit this written portion. After I port that example to React Hooks. That's it. That's my only recommendation: learn React Hooks and stop using class components. I only wrote it without Hooks since it sounded like classes were being taught more than Hooks. My opinions on classes can span into whole other workshop, but they are best summarized here: <https://wattenberger.com/blog/react-hooks>
+There aren't any new concepts going on in this React app, and I did my best to keep things as verbose as possible.
+
+I will take this time to plug [React Hooks](https://wattenberger.com/blog/react-hooks) despite the project being in classes. You can also check out my port of this at [my personal website](https://tedzchu.com/stock-price-react-hooks/) (haha plug!) where I use that. Hopefully I add a search functionality too. I also use async fetch there which is not present in this repo.
 
 ## Conclusion
 
