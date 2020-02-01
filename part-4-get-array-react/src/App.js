@@ -32,11 +32,6 @@ class App extends Component {
           const sortedData = [];
           let count = 29;
           for (let date in stockData['Time Series (Daily)']) {
-            console.log(
-              date,
-              count,
-              stockData['Time Series (Daily)'][date]['4. close']
-            );
             sortedData.unshift({
               d: moment(date).format('MMM DD'),
               p: stockData['Time Series (Daily)'][date][
@@ -45,7 +40,7 @@ class App extends Component {
               x: count, //previous days
               y: stockData['Time Series (Daily)'][date]['4. close'] // numerical price
             });
-            count--;
+            count -= 1;
             if (count < 0) {
               break;
             }
